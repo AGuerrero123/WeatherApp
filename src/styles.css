@@ -1,5 +1,5 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: Roboto,arial,sans-serif;
 }
 h1 {
   color: #7c7c7c;
@@ -13,12 +13,14 @@ ul {
   padding: 0;
 }
 li {
-  color: #7c7c7c;
-  font-size: 16px;
-  font-weight: 100;
+ 
   height: 19px;
   line-height: 1;
   list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 .weather-app {
   border: 1px solid #dadde1;
@@ -28,21 +30,63 @@ li {
   max-width: 600px;
 }
 .weather-icon {
-  height: 64px;
-  width: 64px;
+  height: 60px;
+  width: 60px;
   margin-right: 10px;
 }
 .temperature {
+  font-weight: 400;
   color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 400;
   line-height: 1;
 }
 .units {
   position: relative;
-  top: -32px;
+  top: -23px;
 }
 
 .search-form {
   margin-bottom: 20px;
+}
+
+.daily-temp{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 15px;
+}
+.weekly-icon{
+  padding: 10px;
+display: block;
+margin-left: -10px;
+}
+
+.weekly-forecats{
+  padding-top: 7px;
+}
+.kjsfosd{
+  margin-left: -55px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #70757a;
+}
+.lsdijflk{
+  text-align: right;
+  margin-left: 35px;
+}
+#days{
+  color: #202124;
+  line-height: 15px;
+  padding-top: 7px; 
+  margin-left: 9px; 
+}
+#date, #description{
+  color: #70757a;
+    font-size: 16px;
+}
+
+#city{
+  color: #202124;
+    font-size: 22px;
+    font-weight: 400;
 }

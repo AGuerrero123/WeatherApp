@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto,arial,sans-serif;
+  font-family: Roboto, arial, sans-serif;
 }
 h1 {
   color: #7c7c7c;
@@ -13,7 +13,6 @@ ul {
   padding: 0;
 }
 li {
- 
   height: 19px;
   line-height: 1;
   list-style: none;
@@ -50,43 +49,44 @@ a {
   margin-bottom: 20px;
 }
 
-.daily-temp{
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 15px;
+.daily-temp {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 15px;
 }
-.weekly-icon{
+.weekly-icon {
   padding: 10px;
-display: block;
-margin-left: -10px;
+  display: block;
+  margin-left: -10px;
 }
 
-.weekly-forecats{
+.weekly-forecats {
   padding-top: 7px;
 }
-.kjsfosd{
+.kjsfosd {
   margin-left: -55px;
   font-size: 12px;
   font-weight: normal;
   color: #70757a;
 }
-.lsdijflk{
+.lsdijflk {
   text-align: right;
   margin-left: 35px;
 }
-#days{
+#days {
   color: #202124;
   line-height: 15px;
-  padding-top: 7px; 
-  margin-left: 9px; 
+  padding-top: 7px;
+  margin-left: 9px;
 }
-#date, #description{
+#date,
+#description {
   color: #70757a;
-    font-size: 16px;
+  font-size: 16px;
 }
 
-#city{
+#city {
   color: #202124;
-    font-size: 22px;
-    font-weight: 400;
+  font-size: 22px;
+  font-weight: 400;
 }

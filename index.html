@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <div class="row">
             <div class="col-9">
               <input
@@ -31,6 +31,7 @@
                 autofocus="on"
                 autocomplete="off"
                 class="form-control shadow-sm"
+                id="city-input"
               />
             </div>
             <div class="col-3">
@@ -42,9 +43,9 @@
             </div>
           </div>
         </form>
-        <h1>Sydney NSM, Australia</h1>
+        <h1 id="city"></h1>
         <ul>
-          <li>Wednesday 22:00</li>
+          <li id = "date"></li>
           <li>Partly Cloudy</li>
         </ul>
         <div class="row">
@@ -56,8 +57,8 @@
                 class="weather-icon float-left"
               />
               <div class="float-left">
-                <span class="temperature"> 19</span>
-                <span class="units"> ° C | <a href="">F</a></span>
+                <span class="temperature" id="temperature"> 19</span>
+                <span class="units"> <a href="" id = "celsius-link">°C</a> | <a href="" id = "fahrenheit-link">°F</a></span>
               </div>
             </div>
           </div>
@@ -71,5 +72,6 @@
         </div>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

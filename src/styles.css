@@ -23,15 +23,16 @@ a {
 }
 footer {
   text-align: center;
-  text-decoration: underline;
-  color: blue;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
 }
 .weather-app {
   border: 1px solid #dadde1;
-  margin: 20px auto;
+
   padding: 15px;
   border-radius: 10px;
-  max-width: 600px;
 }
 .weather-icon {
   height: 60px;

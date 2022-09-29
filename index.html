@@ -27,137 +27,139 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type a city..."
-                autofocus="on"
-                autocomplete="off"
-                class="form-control shadow-sm"
-                id="city-input"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-light shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <button
-                class="btn btn-success shadow-sm w-100"
-                id="current-location-button"
-              >
-                Current
-              </button>
-            </div>
-          </div>
-        </form>
-        <div class="row">
-          <div class="col-5">
-            <div class="d-flex">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
-                class="weather-icon float-left"
-              />
-              <div class="float-left">
-                <span class="temperature" id="temperature"></span>
-                <span class="units">
-                  <a href="" id="celsius-link">°C</a> |
-                  <a href="" id="fahrenheit-link">°F</a></span
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  autofocus="on"
+                  autocomplete="off"
+                  class="form-control shadow-sm"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-light shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-success shadow-sm w-100"
+                  id="current-location-button"
                 >
+                  Current
+                </button>
               </div>
             </div>
-          </div>
-          <div class="col-3 kjsfosd">
-            <ul>
-              <li>Humidity: <span class="" id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span>km/h</li>
-            </ul>
-          </div>
-          <div class="col-4 lsdijflk">
-            <h1 id="city"></h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-        </div>
-
-        <section class="one">
+          </form>
           <div class="row">
-            <div class="col-2 weekly-forecats">
-              <div class="" id="days">Mon</div>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                alt="weather-icon"
-                class="weekly-icon"
-              /><span class="daily-temp" id="daily-Temp-Max">12° </span
-              ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+            <div class="col-5">
+              <div class="d-flex">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Cloudy icon"
+                  class="weather-icon float-left"
+                />
+                <div class="float-left">
+                  <span class="temperature" id="temperature"></span>
+                  <span class="units">
+                    <a href="" id="celsius-link">°C</a> |
+                    <a href="" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
+              </div>
             </div>
-            <div class="col-2 weekly-forecats">
-              <div class="" id="days">Tue</div>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                alt="weather-icon"
-                class="weekly-icon"
-              /><span class="daily-temp" id="daily-Temp-Max">12° </span
-              ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+            <div class="col-3 kjsfosd">
+              <ul>
+                <li>Humidity: <span class="" id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
             </div>
-            <div class="col-2 weekly-forecats">
-              <div class="" id="days">Wed</div>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                alt="weather-icon"
-                class="weekly-icon"
-              /><span class="daily-temp" id="daily-Temp-Max">12° </span
-              ><span class="daily-temp" id="daily-Temp-Min">13°</span>
-            </div>
-            <div class="col-2 weekly-forecats">
-              <div class="" id="days">Thu</div>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                alt="weather-icon"
-                class="weekly-icon"
-              /><span class="daily-temp" id="daily-Temp-Max">12° </span
-              ><span class="daily-temp" id="daily-Temp-Min">13°</span>
-            </div>
-            <div class="col-2 weekly-forecats">
-              <div class="" id="days">Fri</div>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                alt="weather-icon"
-                class="weekly-icon"
-              /><span class="daily-temp" id="daily-Temp-Max">12° </span
-              ><span class="daily-temp" id="daily-Temp-Min">13°</span>
-            </div>
-            <div class="col-2 weekly-forecats">
-              <div class="" id="days">Sat</div>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                alt="weather-icon"
-                class="weekly-icon"
-              /><span class="daily-temp" id="daily-tTemp-Max">12° </span
-              ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+            <div class="col-4 lsdijflk">
+              <h1 id="city"></h1>
+              <ul>
+                <li id="date"></li>
+                <li id="description"></li>
+              </ul>
             </div>
           </div>
-        </section>
+
+          <section class="one">
+            <div class="row">
+              <div class="col-2 weekly-forecats">
+                <div class="" id="days">Mon</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="weather-icon"
+                  class="weekly-icon"
+                /><span class="daily-temp" id="daily-Temp-Max">12° </span
+                ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+              </div>
+              <div class="col-2 weekly-forecats">
+                <div class="" id="days">Tue</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="weather-icon"
+                  class="weekly-icon"
+                /><span class="daily-temp" id="daily-Temp-Max">12° </span
+                ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+              </div>
+              <div class="col-2 weekly-forecats">
+                <div class="" id="days">Wed</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="weather-icon"
+                  class="weekly-icon"
+                /><span class="daily-temp" id="daily-Temp-Max">12° </span
+                ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+              </div>
+              <div class="col-2 weekly-forecats">
+                <div class="" id="days">Thu</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="weather-icon"
+                  class="weekly-icon"
+                /><span class="daily-temp" id="daily-Temp-Max">12° </span
+                ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+              </div>
+              <div class="col-2 weekly-forecats">
+                <div class="" id="days">Fri</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="weather-icon"
+                  class="weekly-icon"
+                /><span class="daily-temp" id="daily-Temp-Max">12° </span
+                ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+              </div>
+              <div class="col-2 weekly-forecats">
+                <div class="" id="days">Sat</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="weather-icon"
+                  class="weekly-icon"
+                /><span class="daily-temp" id="daily-tTemp-Max">12° </span
+                ><span class="daily-temp" id="daily-Temp-Min">13°</span>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
+      <footer>
+        <a href="https://github.com/AGuerrero123/WeatherApp" target="_blank"
+          >Open-source</a
+        >
+        by Amanda Guerrero hosted on
+        <a href="https://soft-toffee-088241.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
-    <footer>
-      <a href="https://github.com/AGuerrero123/WeatherApp" target="_blank"
-        >Open-source</a
-      >
-      by Amanda Guerrero hosted on
-      <a href="https://soft-toffee-088241.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>

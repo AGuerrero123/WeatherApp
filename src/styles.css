@@ -23,6 +23,8 @@ a {
 }
 footer {
   text-align: center;
+  text-decoration: underline;
+  color: blue;
 }
 .weather-app {
   border: 1px solid #dadde1;

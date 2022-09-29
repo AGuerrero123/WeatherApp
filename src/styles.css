@@ -21,6 +21,9 @@ a {
   text-decoration: none;
   color: black;
 }
+footer {
+  text-align: center;
+}
 .weather-app {
   border: 1px solid #dadde1;
   margin: 20px auto;

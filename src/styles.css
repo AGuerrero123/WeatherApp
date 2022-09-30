@@ -89,6 +89,14 @@ footer {
   padding-top: 7px;
   margin-left: 9px;
 }
+.weather-temperature .active{
+color: #70757a;
+cursor: default;
+}
+
+.weather-temperature .active:hover{
+  text-decoration: none;
+  }
 #date,
 #description {
   color: #70757a;

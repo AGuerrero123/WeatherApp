@@ -26,9 +26,7 @@ function formatDate(date) {
 function displayWeatherConditions(response) {
   console.log(response);
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -45,6 +43,8 @@ function displayWeatherConditions(response) {
     document.querySelector("#icon").setAttribute(
       "alt", response.data.weather[0].main
     )
+
+    celsiusTemperature = response.data.main.temp;
 }
 function handleSubmit(event) {
   event.preventDefault();
@@ -68,14 +68,21 @@ function getCurrentLocation(event) {
 }
 function convertToFahrenheit(event) {
   event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
+  temperatureElement.innerHTML = Math.round((celsiusTemperature * 9/5) + 32);
 }
 function convertToCelsius(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+ 
+
+let celsiusTemperature = null;
 
 //Feature One
 let dateElement = document.querySelector("#date");

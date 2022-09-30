@@ -35,6 +35,16 @@ function displayWeatherConditions(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+    document.querySelector("#icon").setAttribute(
+      "src", `http://openweathermap.org/img/wn/${
+        response.data.weather[0].icon
+      }@2x.png`
+    )
+    document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+    document.querySelector("#icon").setAttribute(
+      "alt", response.data.weather[0].main
+    )
 }
 function handleSubmit(event) {
   event.preventDefault();

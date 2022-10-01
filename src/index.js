@@ -25,6 +25,7 @@ function formatDate(date) {
 
 function displayWeatherConditions(response) {
   console.log(response);
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -44,7 +45,7 @@ function displayWeatherConditions(response) {
       "alt", response.data.weather[0].main
     )
 
-    celsiusTemperature = response.data.main.temp;
+    
 }
 function handleSubmit(event) {
   event.preventDefault();

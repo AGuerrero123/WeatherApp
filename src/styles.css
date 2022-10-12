@@ -58,21 +58,6 @@ footer {
 .search-form {
   margin-bottom: 20px;
 }
-
-.daily-temp {
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 15px;
-}
-.weekly-icon {
-  padding: 10px;
-  display: block;
-  margin-left: -10px;
-}
-
-.weekly-forecats {
-  padding-top: 7px;
-}
 .kjsfosd {
   margin-left: -55px;
   font-size: 12px;
@@ -83,12 +68,7 @@ footer {
   text-align: right;
   margin-left: 35px;
 }
-#days {
-  color: #202124;
-  line-height: 15px;
-  padding-top: 7px;
-  margin-left: 9px;
-}
+
 .weather-temperature .active{
 color: #70757a;
 cursor: default;
@@ -97,18 +77,34 @@ cursor: default;
 .weather-temperature .active:hover{
   text-decoration: none;
   }
+
+.city {
+    color: #202124;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
 #date,
 #description {
   color: #70757a;
   font-size: 16px;
 }
 
-#city {
-  color: #202124;
-  font-size: 22px;
-  font-weight: 400;
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
 }
 
-#daily-Temp-Min{
-opacity: 0.5;
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
 }

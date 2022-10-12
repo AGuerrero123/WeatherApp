@@ -22,7 +22,15 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
-function displayforecast(){
+function getforecast(coordinates){
+  console.log(coordinates);
+  let apiKey = `be60748992fab0f5da8162563fb21245`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}}&appid=${apiKey}&units=metric`
+console.log(apiUrl);
+axios.get(apiUrl).then(displayForecast);
+}
+function displayForecast(response){
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
 let forecastHTML = `<div class="row">`;
 let days = ["Thu", "Fri", "Sat"];
@@ -42,8 +50,8 @@ forecastHTML = forecastHTML +  `</div>`;
 forecastElement.innerHTML = forecastHTML;
 
 }
+
 function displayWeatherConditions(response) {
-  console.log(response);
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
@@ -63,7 +71,7 @@ function displayWeatherConditions(response) {
     document.querySelector("#icon").setAttribute(
       "alt", response.data.weather[0].main
     )
-
+getforecast(response.data.coord);
     
 }
 function handleSubmit(event) {
@@ -79,7 +87,6 @@ function searchCity(city) {
 function searchLocation(position) {
   let apiKey = `be60748992fab0f5da8162563fb21245`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayWeatherConditions);
 }
 function getCurrentLocation(event) {
@@ -124,4 +131,3 @@ celsiusLink.addEventListener("click", convertToCelsius);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 searchCity("Tokyo");
-displayforecast();

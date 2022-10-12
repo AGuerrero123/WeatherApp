@@ -16,9 +16,8 @@ li {
   height: 19px;
   line-height: 1;
   list-style: none;
-  
 }
-li:first-letter{
+li:first-letter {
   text-transform: capitalize;
 }
 a {
@@ -69,21 +68,21 @@ footer {
   margin-left: 35px;
 }
 
-.weather-temperature .active{
-color: #70757a;
-cursor: default;
+.weather-temperature .active {
+  color: #70757a;
+  cursor: default;
 }
 
-.weather-temperature .active:hover{
+.weather-temperature .active:hover {
   text-decoration: none;
-  }
+}
 
 .city {
-    color: #202124;
-    font-size: 22px;
-    font-weight: 400;
-  }
-  
+  color: #202124;
+  font-size: 22px;
+  font-weight: 400;
+}
+
 #date,
 #description {
   color: #70757a;
